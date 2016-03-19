@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<body>
+
+<div class="container col-md-6 col-md-offset-3">
+    <div ng-controller="MyController as ctrl">
+        <br/>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Search Tasks</h3>
+            </div>
+            <div class="panel-body">
+                <from class="form-inline">
+                    <div class="form-group">
+                        <input class="form-control" ng-model="ctrl.query.name" placeholder="Search for tasks">      
+                         <button type="button" ng-click="ctrl.searchItem()" class="btn btn-info btn-sm" >
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </button>                       
+                    </div>
+                </from>
+                    <table class="table table-striped">
+                        <tr>
+                            <th>Task</th>
+                            <th>Action</th>
+                            <th>Button</th>
+                        </tr>
+                        <tr ng-repeat="search in ctrl.search_data">
+                            <td>{{search.name}}</td>
+                            <td>{{search.status}}</td>
+                            <td>
+                                <button data-ng-click="ctrl.changeStatus(search)" type="button" class="btn btn-primary btn-sm" ng-show="search.status === 'Doing'">
+                                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                                </button>
+                                <button data-ng-click="ctrl.deleteItem($index)" type="button" class="btn btn-danger btn-sm">
+                                    <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Add Tasks</h3>
+            </div>
+            <div class="panel-body">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Add new task" id="item_content" >
+                        <button type="button" ng-click="ctrl.addItem()" class="btn btn-info btn-sm">
+                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </form>
+                    <table class="table table-striped">
+                        <tr>
+                            <th>Task</th>
+                            <th>Action</th>
+                            <th>Button</th>
+                        </tr>
+                        <tr ng-repeat="data in ctrl.data">
+                            <td>{{data.name}}</td>
+                            <td>{{data.status}}</td>
+                            <td>
+                                <button data-ng-click="ctrl.changeStatus(data)" type="button" class="btn btn-primary btn-sm" ng-show="data.status === 'Doing'">
+                                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                                </button>
+                                <button data-ng-click="ctrl.deleteItem($index)" type="button" class="btn btn-danger btn-sm">
+                                    <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-2.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/myApp.js"></script>
+</body>
+</html>

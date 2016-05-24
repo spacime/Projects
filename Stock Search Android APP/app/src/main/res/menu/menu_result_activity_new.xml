@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.ulim.stock6.ResultActivityNew">
+    <!-- "Mark Favorite", should appear as action button if possible -->
+
+    <item
+        android:id="@+id/action_add_favorite"
+        android:icon="@drawable/emptystarweb"
+        android:title="Add Favorite"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_remove_favorite"
+        android:icon="@drawable/yellowstarweb"
+        android:title="Remove Favorite"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/share_facebook"
+        android:icon="@drawable/facebookiconweb"
+        android:title="facorite"
+        app:showAsAction="ifRoom"/>
+    <!--<item-->
+        <!--android:id="@+id/action_settings"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="@string/action_settings"-->
+        <!--app:showAsAction="never" />-->
+</menu>

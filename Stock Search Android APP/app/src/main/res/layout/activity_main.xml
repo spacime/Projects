@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ulim.stock6.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Stock Name/Symbol"
+        android:textSize="77px" />
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:layout_height="0px"/>
+
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:nextFocusUp="@id/autoCompleteTextView"
+        android:nextFocusLeft="@id/autoCompleteTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/clear_button"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/clear_button"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/autoCompleteTextView"
+        android:layout_weight="50"
+        android:onClick="createActivity"
+        android:text="CLEAR" />
+
+    <Button
+        android:id="@+id/get_quote_button"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/autoCompleteTextView"
+        android:layout_alignTop="@+id/clear_button"
+        android:text="GET QUOTE" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/clear_button"
+        android:layout_below="@+id/clear_button"
+        android:layout_marginTop="20px"
+        android:text="Favorites"
+        android:textSize="66px" />
+
+    <Switch
+        android:id="@+id/switch_auto_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/get_quote_button"
+        android:layout_alignTop="@+id/textView2"
+        android:text="Auto Refresh" />
+
+    <ImageButton
+        android:id="@+id/imageView"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/get_quote_button"
+        android:layout_toEndOf="@+id/switch_auto_refresh"
+        android:clickable="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/refresh"/>
+
+    <com.example.ulim.stock6.DynamicNonScrollListView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/favoritesListView"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:divider="@null"
+        android:dividerHeight="20dp"/>
+
+
+</RelativeLayout>

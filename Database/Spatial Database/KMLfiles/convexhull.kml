@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Conves</name>
+    <Style id="transBluePoly">
+      <LineStyle>
+        <width>5</width>
+        <color>7dff0000</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>7dff0000</color>
+      </PolyStyle>
+    </Style>
+    <Placemark>
+      <name>Convexhull</name>
+      <styleUrl>#transBluePoly</styleUrl>
+      <altitudeMode>relativeToGround</altitudeMode>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              -118.291472222,34.0183611111,60
+              -118.294083333,34.0223055556,60
+              -118.291444444,34.0253888889,60
+              -118.280111111,34.0218888889,60
+              -118.282333333,34.0183888889,60
+              -118.291472222,34.0183611111,60
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+  </Document>
+</kml>

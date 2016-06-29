@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+    <Document>
+        <Style id="z1">
+            <IconStyle>
+                <Icon>
+                    <href>http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Placemark>
+            <name>Exposition/Vermont</name>
+            <styleUrl>#z1</styleUrl>
+            <Point>
+                <coordinates>-118.291472222,34.0183611111</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Vermont/Jefferson</name>
+            <styleUrl>#z1</styleUrl>
+            <Point>
+                <coordinates>-118.291444444,34.0253888889</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Jefferson/Figueroa</name>
+            <styleUrl>#z1</styleUrl>
+            <Point>
+                <coordinates>-118.280111111,34.0218888889</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Figueroa/Exposition</name>
+            <styleUrl>#z1</styleUrl>
+            <Point>
+                <coordinates>-118.282333333,34.0183888889</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Cromwell Track and Field</name>
+            <styleUrl>#z1</styleUrl>
+            <Point>
+                <coordinates>-118.287583333,34.0221944444</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Leavey Library</name>
+            <styleUrl>#z1</styleUrl>
+            <Point>
+                <coordinates>-118.282944444,34.0217222222</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Tommy Trojan</name>
+            <styleUrl>#z1</styleUrl>
+            <Point>
+                <coordinates>-118.285416667,34.0205555556</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Hoose Library of Philosophy</name>
+            <styleUrl>#z1</styleUrl>
+            <Point>
+                <coordinates>-118.286583333,34.0188055556</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Apartment</name>
+            <styleUrl>#z1</styleUrl>
+            <Point>
+                <coordinates>-118.294083333,34.0223055556</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

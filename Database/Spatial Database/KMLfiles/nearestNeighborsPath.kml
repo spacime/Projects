@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Overall</name>
+    <Style id="yellowLineGreenPoly">
+      <LineStyle>
+        <color>7f00ffff</color>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7f00ff00</color>
+      </PolyStyle>
+    </Style>
+    <Placemark>
+      <name>Nearest Neighbors1</name>
+      <styleUrl>#yellowLineGreenPoly</styleUrl>
+      <LineString>
+        <coordinates>
+          -118.294083333,34.0223055556,0
+          -118.291472222,34.0183611111,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Nearest Neighbors2</name>
+      <styleUrl>#yellowLineGreenPoly</styleUrl>
+      <LineString>
+        <coordinates>
+          -118.294083333,34.0223055556,0
+          -118.291444444,34.0253888889,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Nearest Neighbors3</name>
+      <styleUrl>#yellowLineGreenPoly</styleUrl>
+      <LineString>
+        <coordinates>
+          -118.294083333,34.0223055556,0
+          -118.287583333,34.0221944444,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>
